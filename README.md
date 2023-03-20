@@ -15,12 +15,12 @@ Repositories aren't the only place you can store code.<br/>
 Since this is an OSINT challenge, we can take just about any route to this challenge. However, we will be covering 2 of those.
 #### Identifying the Problem
 We know with the problem statement that we need to find a piece of code since a whole "encoding scheme" was leaked. We also know the Instagram ID: [dingavinga](https://instagram.com/dingavinga)
-#### Recon
+### Recon
 The first step we take is visting the target's Instagram profile.<br/>
 ![image](https://user-images.githubusercontent.com/88616338/226379550-c0dfe014-42bb-4ca6-b0b5-474adb226c79.png)
 <br/>To our surprise, the profile is private and there is probably no way of accessing his posts. However, we stumble upon the name of the target- Abdullah.
 
-#### Route 1 (The know-it-all route)
+### Route 1 (The know-it-all route)
 Knowing that a piece of code was leaked, our best bet is [GitHub](https://github.com). We search for [dingavinga](https://github.com/dingavinga)...<br/>
 ![image](https://user-images.githubusercontent.com/88616338/226380446-bd3de36d-bfb0-47d2-bb69-5f2b5f44e646.png)<br/>
 We notice the name and this is definitely not "Abdullah"'s profile. Maybe the username @dingavinga was taken at the time the target created his profile? We try and search for GitHub profiles keeping the keyword "dingavinga" in mind.
@@ -28,13 +28,13 @@ We notice the name and this is definitely not "Abdullah"'s profile. Maybe the us
 <br/>
 Woah! There's another profile with the username [dingavinga1](https://github.com/dingavinga1). We go ahead and open up this profile and... (skip route 2 to avoid suspense)
 
-#### Route 2 (Noob)
+### Route 2 (Noob)
 We go ahead and search for "dingavinga abdullah" on Google and get the following results.<br/>
 ![image](https://user-images.githubusercontent.com/88616338/226383089-55ea56d2-9753-407d-9637-2af710d2307b.png)
 <br/>
 Out of LinkedIn, SoundCloud and GitHub, which platform is perfect for leaking code? You guessed it- Github. We go ahead and click it and...
 
-#### Finding the flag
+### Finding the flag
 ![image](https://user-images.githubusercontent.com/88616338/226381805-cd646cfe-a098-4e0e-be2a-670af994216e.png)
 <br/>
 We've found our guy! Now all we have to do is search for rsa in his repositories. Unfortunately, we get "no results returned" :(<br/>
